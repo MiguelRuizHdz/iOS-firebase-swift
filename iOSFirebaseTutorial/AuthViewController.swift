@@ -45,7 +45,7 @@ class AuthViewController: UIViewController {
     
     @IBAction func logInButtonAction(_ sender: Any) {
         if let email = emailTextField.text, let password = passwordTextField.text {
-            Auth.auth().signIn(with: <#T##FIRAuthCredential#>)(withEmail: email, password: password) {
+            Auth.auth().signIn(withEmail: email, password: password) {
                 (result, error) in
                 
                 if let result = result, error == nil {

@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -99,71 +98,5 @@
             </objects>
             <point key="canvasLocation" x="-252" y="-593"/>
         </scene>
-        <!--Home View Controller-->
-        <scene sceneID="ezw-ad-Bzm">
-            <objects>
-                <viewController id="yop-eE-bwW" customClass="HomeViewController" customModule="iOSFirebaseTutorial" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AaU-rI-PYO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bbc-L6-xdz">
-                                <rect key="frame" x="16" y="60" width="382" height="136"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIK-Nl-xqY">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proveedor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brj-kD-Xxc">
-                                        <rect key="frame" x="0.0" y="48" width="382" height="40"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXc-r5-Kr3">
-                                        <rect key="frame" x="0.0" y="96" width="382" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="aP4-DG-mOI"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Cerrar Sesión">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="1" green="0.62745098039215685" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="closeSessionButtonAction:" destination="yop-eE-bwW" eventType="touchUpInside" id="KTg-Ff-Nqg"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="uBM-sa-Itz"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="uBM-sa-Itz" firstAttribute="trailing" secondItem="bbc-L6-xdz" secondAttribute="trailing" constant="16" id="1rZ-e5-YTl"/>
-                            <constraint firstItem="bbc-L6-xdz" firstAttribute="leading" secondItem="uBM-sa-Itz" secondAttribute="leading" constant="16" id="apv-eN-I8u"/>
-                            <constraint firstItem="bbc-L6-xdz" firstAttribute="top" secondItem="uBM-sa-Itz" secondAttribute="top" constant="16" id="ggW-6H-0Vv"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="1AN-g1-MnO"/>
-                    <connections>
-                        <outlet property="closeSessionButton" destination="UXc-r5-Kr3" id="div-xd-2wB"/>
-                        <outlet property="emailLabel" destination="CIK-Nl-xqY" id="ENt-Sz-FcP"/>
-                        <outlet property="providerLabel" destination="brj-kD-Xxc" id="ZxR-VI-1hL"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7tX-mN-QnC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="539" y="-593"/>
-        </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

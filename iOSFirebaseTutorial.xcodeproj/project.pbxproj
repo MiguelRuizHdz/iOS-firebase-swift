@@ -42,6 +42,7 @@
 		14E0429B28EC9012004B9167 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 14E0429A28EC9012004B9167 /* FirebaseStorage */; };
 		14E0429D28EC9012004B9167 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 14E0429C28EC9012004B9167 /* FirebaseStorageCombine-Community */; };
 		14E042A128ECB10B004B9167 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E042A028ECB10B004B9167 /* HomeViewController.swift */; };
+		14ECC2BC28F5C3B600F80722 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14ECC2BB28F5C3B600F80722 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		14E0425F28EC8217004B9167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14E0426528EC8D4D004B9167 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		14E042A028ECB10B004B9167 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		14ECC2BB28F5C3B600F80722 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				14E0425C28EC8217004B9167 /* LaunchScreen.storyboard */,
 				14E0426528EC8D4D004B9167 /* GoogleService-Info.plist */,
 				14E0425F28EC8217004B9167 /* Info.plist */,
+				14ECC2BB28F5C3B600F80722 /* HomeViewController.xib */,
 			);
 			path = iOSFirebaseTutorial;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			files = (
 				14E0425E28EC8217004B9167 /* LaunchScreen.storyboard in Resources */,
 				14E0426628EC8D4D004B9167 /* GoogleService-Info.plist in Resources */,
+				14ECC2BC28F5C3B600F80722 /* HomeViewController.xib in Resources */,
 				14E0425B28EC8217004B9167 /* Assets.xcassets in Resources */,
 				14E0425928EC8212004B9167 /* Main.storyboard in Resources */,
 			);

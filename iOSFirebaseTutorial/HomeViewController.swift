@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 enum ProviderType: String {
     case basic
@@ -33,11 +34,24 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        title = "Inicio"
+        
+        emailLabel.text = email
+        providerLabel.text = provider.rawValue
     }
     
 
     @IBAction func closeSessionButtonAction(_ sender: Any) {
+        switch provider {
+        case .basic:
+            do {
+                try Auth.auth().signOut()
+                navigationController?.popViewController(animated: true)
+            } catch {
+                // Se ha producido un error
+            }
+            
+        }
     }
     /*
     // MARK: - Navigation
